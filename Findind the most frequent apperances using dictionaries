@@ -1,0 +1,7 @@
+name=input("Enter a string ")
+d={}
+#d=orderedDict(name)
+for x in name:
+    d[x]=d.get(x,0) + 1
+for k,v in sorted(d.items(),key=lambda x:x[1],reverse=True):
+     print('{} occues {} times'.format(k,v))
